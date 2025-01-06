@@ -11,12 +11,13 @@
 </head>
 
 <body>
-    <main class="mt-10 w-[500px]   m-auto ">
+    <main class="mt-10 w-[500px] m-auto pl-8 ">
         <h1 class="font-bold text-3xl mb-3">Ludo Game Board Design
         </h1>
-        <div class="container flex   flex-wrap ">
+        <div class="container flex flex-wrap ">
+            <!-- first row content -->
             <!-- red box content -->
-            <div class="redBox-table-greenBox relative">
+            <div class="redBox relative">
                 <!-- outer red box -->
                 <div class="redBox w-[175px] h-[175px] bg-[red]">
                     <!-- inner white box -->
@@ -70,7 +71,7 @@
             </div>
 
             <!-- tabel content -->
-            <table class="border ">
+            <table>
                 <tr>
                     <td class="w-7 h-7 border-black border-[1px]"></td>
                     <td class="w-7 h-7 border-black border-[1px]">
@@ -106,9 +107,9 @@
                     <td class="w-7 h-7 border-black border-[1px]"></td>
                 </tr>
             </table>
-            <!-- green box content -->
 
-            <div class="redBox-table-greenBox relative">
+            <!-- green box content -->
+            <div class="greenBox relative">
                 <!-- outer red box -->
                 <div class="redBox w-[175px] h-[175px] bg-[green]">
                     <!-- inner white box -->
@@ -161,8 +162,9 @@
                 </div>
             </div>
 
-            <!-- second row table 1 content  -->
-            <table class="border">
+            <!-- second row content  -->
+            <!-- table 1 -->
+            <table>
                 <tr>
                     <td class="w-7 h-7 border-black border-[1px]"></td>
                     <td class="w-7 h-7 border-black border-[1px] bg-[red]"></td>
@@ -194,7 +196,7 @@
 
             </table>
 
-            <!-- second row mid box -->
+            <!-- table 2 -->
             <div class="w-[97px] h-[97px] bg-gray-300 ">
 
                 <div class="w-7 h-7 bg-[green] m-auto">
@@ -212,8 +214,8 @@
                 </div>
 
             </div>
-            <!-- second row table  2 -->
-            <table class="border">
+            <!-- table 3 -->
+            <table>
                 <tr>
                     <td class="w-7 h-7 border-black border-[1px]"></td>
                     <td class="w-7 h-7 border-black border-[1px]"></td>
@@ -246,9 +248,9 @@
 
             </table>
 
-            <!-- third row content blue, table and yellow box -->
-
-            <div class="redBox-table-greenBox relative">
+            <!-- third row content -->
+            <!-- blue box content -->
+            <div class="blueBox relative">
                 <!-- outer red box -->
                 <div class="redBox w-[175px] h-[175px] bg-[#95d4f3]">
                     <!-- inner white box -->
@@ -259,7 +261,7 @@
                         <div class="flex justify-center items-center flex-wrap gap-4 ">
                             <!--outer  red circle 1 -->
                             <div
-                                class="outerRedCircle w-[35px] h-[35px] bg-[red] rounded-[50%] border-black border-[1px]  relative">
+                                class="outerRedCircle w-[35px] h-[35px] bg-[#95d4f3] rounded-[50%] border-black border-[1px]  relative">
 
                                 <!-- nested inner white cricle 1 -->
                                 <div class="w-[13px] h-[13px] bg-white  rounded-[50%] absolute top-[10px] left-[10px]">
@@ -269,7 +271,7 @@
 
                             <!--outer  red circle 2 -->
                             <div
-                                class="outerRedCircle w-[35px] h-[35px] bg-[red] rounded-[50%] border-black border-[1px]  relative">
+                                class="outerRedCircle w-[35px] h-[35px] bg-[#95d4f3] rounded-[50%] border-black border-[1px]  relative">
 
                                 <!-- nested inner white cricle 1 -->
                                 <div class="w-[13px] h-[13px] bg-white  rounded-[50%] absolute top-[10px] left-[10px]">
@@ -279,7 +281,7 @@
 
                             <!--outer  red circle 3 -->
                             <div
-                                class="outerRedCircle w-[35px] h-[35px] bg-[red] rounded-[50%] border-black border-[1px]  relative">
+                                class="outerRedCircle w-[35px] h-[35px] bg-[#95d4f3] rounded-[50%] border-black border-[1px]  relative">
 
                                 <!-- nested inner white cricle 1 -->
                                 <div class="w-[13px] h-[13px] bg-white  rounded-[50%] absolute top-[10px] left-[10px]">
@@ -288,7 +290,7 @@
 
                             <!--outer  red circle 4 -->
                             <div
-                                class="outerRedCircle w-[35px] h-[35px] bg-[red] rounded-[50%] border-black border-[1px]  relative">
+                                class="outerRedCircle w-[35px] h-[35px] bg-[#95d4f3] rounded-[50%] border-black border-[1px]  relative">
 
                                 <!-- nested inner white cricle 1 -->
                                 <div class="w-[13px] h-[13px] bg-white  rounded-[50%] absolute top-[10px] left-[10px]">
@@ -302,7 +304,7 @@
             </div>
 
             <!-- tabel content -->
-            <table class="border ">
+            <table>
                 <tr>
                     <td class="w-7 h-7 border-black border-[1px]"></td>
                     <td class="w-7 h-7 border-black border-[1px] bg-[#95d4f3]"></td>
@@ -338,9 +340,9 @@
                     <td class="w-7 h-7 border-black border-[1px]"></td>
                 </tr>
             </table>
-            <!-- green box content -->
 
-            <div class="redBox-table-greenBox relative">
+            <!-- yellow box content -->
+            <div class="yellowBox relative">
                 <!-- outer red box -->
                 <div class="redBox w-[175px] h-[175px] bg-[yellow]">
                     <!-- inner white box -->
@@ -351,7 +353,7 @@
                         <div class="flex justify-center items-center flex-wrap gap-4 ">
                             <!--outer  red circle 1 -->
                             <div
-                                class="outerRedCircle w-[35px] h-[35px] bg-[red] rounded-[50%] border-black border-[1px]  relative">
+                                class="outerRedCircle w-[35px] h-[35px] bg-[yellow] rounded-[50%] border-black border-[1px]  relative">
 
                                 <!-- nested inner white cricle 1 -->
                                 <div class="w-[13px] h-[13px] bg-white  rounded-[50%] absolute top-[10px] left-[10px]">
@@ -361,7 +363,7 @@
 
                             <!--outer  red circle 2 -->
                             <div
-                                class="outerRedCircle w-[35px] h-[35px] bg-[red] rounded-[50%] border-black border-[1px]  relative">
+                                class="outerRedCircle w-[35px] h-[35px] bg-[yellow] rounded-[50%] border-black border-[1px]  relative">
 
                                 <!-- nested inner white cricle 1 -->
                                 <div class="w-[13px] h-[13px] bg-white  rounded-[50%] absolute top-[10px] left-[10px]">
@@ -371,7 +373,7 @@
 
                             <!--outer  red circle 3 -->
                             <div
-                                class="outerRedCircle w-[35px] h-[35px] bg-[red] rounded-[50%] border-black border-[1px]  relative">
+                                class="outerRedCircle w-[35px] h-[35px] bg-[yellow] rounded-[50%] border-black border-[1px]  relative">
 
                                 <!-- nested inner white cricle 1 -->
                                 <div class="w-[13px] h-[13px] bg-white  rounded-[50%] absolute top-[10px] left-[10px]">
@@ -380,7 +382,7 @@
 
                             <!--outer  red circle 4 -->
                             <div
-                                class="outerRedCircle w-[35px] h-[35px] bg-[red] rounded-[50%] border-black border-[1px]  relative">
+                                class="outerRedCircle w-[35px] h-[35px] bg-[yellow] rounded-[50%] border-black border-[1px]  relative">
 
                                 <!-- nested inner white cricle 1 -->
                                 <div class="w-[13px] h-[13px] bg-white  rounded-[50%] absolute top-[10px] left-[10px]">

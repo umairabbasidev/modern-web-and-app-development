@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Poppins google font links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+        rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://uxwing.com/wp-content/themes/uxwing/download/animals-and-birds/cat-icon.png"
+        type="image/x-icon">
+    <title>Cat Photo Web App website web 1</title>
+    <style>
+        body {
+            background-color: aliceblue;
+            padding-left: 10px;
+            font-family: "Poppins", serif;
+        }
+
+        img {
+            width: 100%;
+            max-width: 281px;
+            border-radius: 5px;
+            transform: background;
+
+        }
+
+        img:hover {
+            box-shadow: 2px 2px 2px gray;
+            transition: 0.5s;
+            cursor: pointer;
+        }
+
+        fieldset {
+            border-radius: 5px;
+        }
+
+        fieldset.personality {
+            margin-top: 10px;
+        }
+
+        input[type="text"],
+        button[type="submit"] {
+            background: inherit;
+            padding: 4px;
+            margin-left: 2px;
+            border-radius: 5px;
+        }
+
+        button {
+            cursor: pointer;
+        }
+
+        .input-arrow {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 10px;
+        }
+
+        .arrow-box {
+            position: relative;
+            margin-top: 10px;
+            /* cursor: pointer; */
+        }
+
+        .arrow-box img:hover {
+            box-shadow: none;
+            cursor: default;
+        }
+
+        .arrow {
+            position: absolute;
+            right: 5px;
+            top: 5px;
+            width: 20px;
+
+        }
+
+        footer p {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <h1>CatPhotoApp</h1>
+        <section>
+            <h2>Cat Photos</h2>
+            <p>Everyone loves <a href="#cuteCats">cute
+                    cats</a> online!</p>
+            <p>See more <a href="#seeMore">cat photos</a> in our gallery.</p>
+            <a href="#"><img src="https://catphotowebapp.vercel.app/assets/relaxing-cat.jpg"
+                    alt="A cute orange cat lying on its back."></a>
+        </section>
+        <section>
+            <h2>Cat Lists</h2>
+            <h3>Things cats love:</h3>
+            <ul>
+                <li>cat nip</li>
+                <li>laser pointers</li>
+                <li>lasagna </li>
+            </ul>
+            <figure id="cuteCats">
+                <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg"
+                    alt="A slice of lasagna on a plate.">
+                <figcaption>Cats <em>love</em> lasagna.</figcaption>
+            </figure>
+            <h3>Top 3 things cats hate:</h3>
+            <ol>
+                <li>flea treatment</li>
+                <li>thunder</li>
+                <li>other cats</li>
+            </ol>
+            <figure id="seeMore">
+                <img src="https://catphotowebapp.vercel.app/assets/cats.jpg" alt="Five cats looking around a field.">
+                <figcaption>Cats <strong>hate</strong> other cats.</figcaption>
+            </figure>
+        </section>
+        <section>
+            <h2>Cat Form</h2>
+            <form action="#" method="get">
+                <fieldset>
+                    <legend>Is your cat an indoor or outdoor cat?</legend>
+                    <label for="indoor">
+                        <input type="radio" name="indoor-outdoor" value="indoor" id="indoor" checked=""> Indoor
+                    </label>
+                    <label for="outdoor">
+                        <input type="radio" name="indoor-outdoor" value="outdoor" id="outdoor"> Outdoor
+                    </label>
+                </fieldset>
+                <fieldset class="personality">
+                    <legend>What's your cat's personality?</legend>
+                    <label for="loving">
+                        <input type="checkbox" name="personality" value="loving" id="loving" checked=""> Loving
+                    </label>
+                    <label for="lazy">
+                        <input type="checkbox" name="personality" value="lazy" id="lazy"> Lazy
+                    </label>
+                    <label for="energetic">
+                        <input type="checkbox" name="personality" value="energetic" id="energetic"> Energetic
+                    </label>
+                </fieldset>
+                <div class="input-arrow">
+                    <div>
+                        <input type="text" placeholder="cat photo URL" name="catPhotoURL" required="">
+                        <button type="submit">Submit</button>
+                    </div>
+                    <div class="arrow-box">
+                        <a href="#top">
+                            <img src="./assets/Ellipse.svg" alt="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" class="arrow">
+                                <path d="M12 20V4M5 11L12 4L19 11" stroke="black" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </form>
+            <a href="../websiteTwo/index.html" target="_blank">Click here to visit next website</a>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 <a href="https://github.com/umairabbasidev" target="_blank">Muhammad
+                Umair Abbasi</a>. All rights reserved.
+        </p>
+    </footer>
+
+
+
+
+
+</body>
+
+</html>

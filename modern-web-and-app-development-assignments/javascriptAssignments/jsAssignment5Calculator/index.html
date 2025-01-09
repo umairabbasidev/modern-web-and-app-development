@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Calculator Web App</title>
+	<link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/1176/1176289.png" type="image/x-icon">
+	<script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body>
+	<main>
+		<div class="container p-4 bg-slate-100 max-w-[320px] m-auto mt-3 border-gray-300 shadow-lg border-[1px]">
+
+			<!-- top header content box -->
+			<div class="topHeader flex justify-between items-center">
+				<div class="leftCol flex items-center gap-4">
+					<div class="self-end">
+						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+							stroke="currentColor" aria-hidden="true" class="h-6 w-6">
+							<path stroke-linecap="round" stroke-linejoin="round"
+								d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5">
+							</path>
+						</svg>
+					</div>
+					<h3 class="font-bold text-xl">Standard</h3>
+					<div>
+						<img src="./top-icon.png" alt="">
+					</div>
+
+				</div>
+				<div class="rightCol">
+					<img src="./history-icon.png" alt="">
+				</div>
+			</div>
+
+			<!-- input content box  -->
+			<div class="mt-6 ">
+				<label for="text">
+					<input type="text" id="text"
+						class="outline-none border-none w-full bg-inherit text-5xl text-right   font-semibold"
+						value="0">
+				</label>
+			</div>
+
+			<!-- third row content box  -->
+			<div class="flex items-center justify-between">
+				<p class="text-[#a88c8c] font-medium">MC</p>
+				<p>MR</p>
+				<p>M+</p>
+				<p>M-</p>
+				<p>MS</p>
+				<p class="text-[#a88c8c] flex items-center">M
+					<img src="https://cdn-icons-png.flaticon.com/128/10728/10728680.png" alt="" class="w-2">
+				</p>
+			</div>
+
+			<!-- last row button content box -->
+			<div class="flex flex-wrap justify-between gap-[1px] mt-2">
+				<!-- first button row -->
+				<button
+					class="border-gray-300 border-[1px]  w-[66px] h-[56px] rounded-md bg-white shadow-sm py-3">%</button>
+				<button class="flex  gap-3">
+					<button
+						class="border-gray-300 border-[1px]  w-[66px] h-[56px] rounded-md bg-white shadow-sm py-3">CE</button>
+					<button class="flex  flex-wrap gap-3">
+						<button
+							class="border-gray-300 border-[1px] w-[66px] h-[56px] rounded-md bg-white shadow-sm py-3">C</button>
+						<button class="flex  gap-3">
+							<button
+								class="border-gray-300 border-[1px]  w-[66px] h-[56px] rounded-md bg-white shadow-sm py-3">
+								<img src="./cut-btn-pic.png" alt="" class="max-w-10 m-auto">
+							</button>
+							<!-- second button row -->
+							<button
+								class="border-gray-300 border-[1px]  w-[66px] h-[56px] rounded-md bg-white shadow-sm py-3"><sup>1</sup>/<sub>x</sub></button>
+							<button class="flex  gap-3">
+								<button
+									class="border-gray-300 border-[1px]  w-[66px] h-[56px] rounded-md bg-white shadow-sm py-3">x<sup>2</sup></button>
+								<button class="flex  flex-wrap gap-3">
+									<button
+										class="border-gray-300 border-[1px]  w-[66px] h-[56px] rounded-md bg-white shadow-sm py-3"><sup>2&#8730;x
+									</button>
+									<button class="flex  gap-3">
+										<button
+											class="border-gray-300 border-[1px]  w-[66px] h-[56px] rounded-md bg-white shadow-sm py-3">
+											÷
+										</button>
+										<!-- third button row -->
+										<button
+											class="border-gray-300 border-[1px]  w-[66px] h-[56px] rounded-md bg-white shadow-sm py-3">7</button>
+										<button class="flex  gap-3">
+											<button
+												class="border-gray-300 border-[1px]  w-[66px] h-[56px] rounded-md bg-white shadow-sm py-3">8</button>
+											<button class="flex  flex-wrap gap-3">
+												<button
+													class="border-gray-300 border-[1px]  w-[66px] h-[56px] rounded-md bg-white shadow-sm py-3">9</button>
+												<button class="flex  gap-3">
+													<button
+														class="border-gray-300 border-[1px]  w-[66px] h-[56px] rounded-md bg-white shadow-sm py-3">
+														X
+													</button>
+
+													<!-- fourth button row -->
+													<button
+														class="border-gray-300 border-[1px]  w-[66px] h-[56px] rounded-md bg-white shadow-sm py-3">4</button>
+													<button class="flex  gap-3">
+														<button
+															class="border-gray-300 border-[1px]  w-[66px] h-[56px] rounded-md bg-white shadow-sm py-3">5</button>
+														<button class="flex  flex-wrap gap-3">
+															<button
+																class="border-gray-300 border-[1px]  w-[66px] h-[56px] rounded-md bg-white shadow-sm py-3">6</button>
+															<button class="flex  gap-3">
+																<button
+																	class="border-gray-300 border-[1px]  w-[66px] h-[56px] rounded-md bg-white shadow-sm py-3">
+																	-
+																</button>
+
+																<!-- fifth button row -->
+																<button
+																	class="border-gray-300 border-[1px]  w-[66px] h-[56px] rounded-md bg-white shadow-sm py-3">1</button>
+																<button class="flex  gap-3">
+																	<button
+																		class="border-gray-300 border-[1px]  w-[66px] h-[56px] rounded-md bg-white shadow-sm py-3">2</button>
+																	<button class="flex  flex-wrap gap-3">
+																		<button
+																			class="border-gray-300 border-[1px]  w-[66px] h-[56px] rounded-md bg-white shadow-sm py-3">3</button>
+																		<button class="flex  gap-3">
+																			<button
+																				class="border-gray-300 border-[1px]  w-[66px] h-[56px] rounded-md bg-white shadow-sm py-3">
+																				+
+																			</button>
+																			<!-- sixth button row -->
+																			<button
+																				class="border-gray-300 border-[1px]  w-[66px] h-[56px] rounded-md bg-white shadow-sm py-3">+/-</button>
+																			<button class="flex  gap-3">
+																				<button
+																					class="border-gray-300 border-[1px]  w-[66px] h-[56px] rounded-md bg-white shadow-sm py-3">0</button>
+																				<button class="flex  flex-wrap gap-3">
+																					<button
+																						class="border-gray-300 border-[1px]  w-[66px] h-[56px] rounded-md bg-white shadow-sm py-3">.</button>
+																					<button class="flex  gap-3">
+																						<button
+																							class="border-gray-300 border-[1px]  w-[66px] h-[56px] rounded-md bg-white shadow-sm py-3">
+																							=
+																						</button>
+			</div>
+		</div>
+	</main>
+	<script src="./app.js"></script>
+</body>
+
+</html>
